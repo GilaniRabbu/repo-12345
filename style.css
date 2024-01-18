@@ -1,0 +1,90 @@
+:root {
+    --clr-primary: #0F1D35;
+    --clr-neutral: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik Burned', system-ui;
+}
+
+h1 {
+    color: var(--clr-neutral);
+    background-color: var(--clr-primary);
+    font-size: 1.75rem;
+    line-height: 3rem;
+    padding: 2rem 0.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: var(--clr-primary);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score,
+#com-score {
+    color: #5559CE;
+    font-size: 5rem;
+}
+
+.user {
+    color: #2E5EC5;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+}
+
+.msg-container {
+    margin: 4rem 0 1rem;
+}
+
+#msg {
+    color: var(--clr-neutral);
+    background-color: var(--clr-primary);
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    letter-spacing: 0.25rem;
+}
